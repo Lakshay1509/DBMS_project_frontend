@@ -36,11 +36,17 @@ const Navbar = () => {
                 );
               })}
               {/* Darkmode feature */}
+              <Link to="/">
+                <button className="px-4 py-2 text-white font-body bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:from-blue-600 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50">
+                  Home
+                </button>
+              </Link>
               <Link to="/info">
                 <button className="px-4 py-2 text-white font-body bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:from-blue-600 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50">
                   Get Booking Info
                 </button>
               </Link>
+              
               <DarkMode />
             </ul>
           </nav>
